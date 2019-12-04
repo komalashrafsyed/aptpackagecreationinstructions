@@ -153,7 +153,7 @@ WantedBy=multi-user.target </br>
 
 </br>
 
-
+</b>
 <b>Step 5:</b> After the files have been changed then go up a level in folder heirarchy as shown below and run the following commands </br>
 <b>
 $ cd ..</br>
