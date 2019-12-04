@@ -55,13 +55,9 @@ $ sudo dotnet clean</br>
 $ sudo rm -rf bin obj</br>
 
 $ cd ..</br>
-
 $ sudo mv PingAsync pingasync-2.0</br>
-
 $ sudo tar cvzf pingasync-2.0.tar.gz pingasync-2.0</br>
-
 $ sudo cd pingasync-2.0</br>
-
 $ sudo dh_make -f ../pingasync-2.0.tar.gz -s -c mit -n</br>
 
 $ cd debian </br>
@@ -69,7 +65,8 @@ $ sudo rm *ex *EX </br>
 $ sudo rm README README.Debian README.source pingasync-docs.docs </br>
 </b>
 
-The following demonstrates Files Changes that need to be made in the following files located in the <b> debian </b> folder
+The following demonstrates Files Changes that need to be made in the following files located in the <b> debian </b> folder. You would use the sudo vim -filename command to open each of the following files and make changes as shown. So for instance your first file would be opened </br>
+<b>$ sudo vim changelog </b> </br>
 
 --------------------------------------
 <b>changelog</b> file changed </br>
@@ -178,7 +175,7 @@ $ cd ..</br>
 $ sudo dpkg -i pingasync_2.0-0ubuntu1_amd64.deb </br>
 $ sudo apt-get install gnupg rng-tools </br>
 $ gpg --gen-key </br>
-#copy the key above should be in the form below
+#copy the key generate by the above commands, it should be in the format as shown below (image below as shows it)
 </br>
 ------
 </br>
