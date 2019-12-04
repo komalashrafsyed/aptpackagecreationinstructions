@@ -21,8 +21,10 @@ $ sudo apt-get install dotnet-sdk-3.0</br>
 $ sudo dotnet --version</br>
 
 
-$ git clone https://airband@dev.azure.com/airband/Komal/_git/Komal</br>
-#cd into the code folder at PingAsync level</br>
+$ git clone https://airband@dev.azure.com/airband/Komal/_git/Komal</br></b>
+#cd into the code folder at PingAsync level 
+</br>
+<b>
 $ sudo dotnet build </br>
 $ sudo dotnet publish -c Release --self-contained -r ubuntu.18.04-x64</br>
 </b>
@@ -42,16 +44,13 @@ $ sudo dotnet publish -c Release --self-contained -r ubuntu.18.04-x64</br>
 </br>
 <b>$ sudo dotnet-symbol --symbols bin/Release/netcoreapp3.0/ubuntu.18.04-x64/publish/</br></b>
 
-#RUN THIS!! 
+
+#run the following after the above has run successfully or not
 </br>
 <b>$ sudo apt install gnupg pbuilder ubuntu-dev-tools apt-file dh-make bzr-builddeb</br>
-
 $ export DEBEMAIL="******syed@microsoft.com"</br>
-
 $ export DEBFULLNAME="PingAsync Tool"</br>
-
 $ sudo dotnet clean</br>
-
 $ sudo rm -rf bin obj</br>
 
 $ cd ..</br>
@@ -65,7 +64,7 @@ $ sudo rm *ex *EX </br>
 $ sudo rm README README.Debian README.source pingasync-docs.docs </br>
 </b>
 
-The following demonstrates Files Changes that need to be made in the following files located in the <b> debian </b> folder. You would use the sudo vim -filename command to open each of the following files and make changes as shown. So for instance your first file would be opened </br>
+<b>Step 4:</b> After the enviornment has been successfully setup, the following demonstrates Files Changes that need to be made in the following files located in the <b> debian </b> folder. You would use the sudo vim -filename command to open each of the following files and make changes as shown. So for instance your first file would be opened </br>
 <b>$ sudo vim changelog </b> </br>
 
 --------------------------------------
