@@ -193,21 +193,22 @@ sub     rsa3072 2019-11-28 [E] [expires: 2021-11-27] </br>
 </b>
 <img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/gpg%20gen%20key.png" >
 
-
-<b># navigate to position at directory '/Komal/Asyn-r-code/' </b>
+<b>Step 7:</b> After the above commands has run successfully, and you have a key with you in a seperate file, then run the following commands </br>
+# navigate to position at directory '/Komal/Asyn-r-code/' 
+<b>
 </br>
 $ sudo apt-get install reprepro </br>
 $ mkdir repo && cd repo </br>
 $ mkdir conf && cd conf </br>
 $ touch distributions </br>
-
 $ sudo vim distributions</br>
+</b>
 
 --------
 <b>distributions </b> file changed </br>
 --------
 
-<b>#change your file name and put the key SignWith below 
+<b>#change your file name and put the key SignWith below obtained in the previous Step
 </br>
 #this is the pub key id given earlier step 
 </b>
@@ -221,12 +222,14 @@ Components: main </br>
 Description: Personal repository </br>
 SignWith: B501DE17DA19A16F  </br>
 
+-------
 
-
+<b>Step 8:</b> After the distributions file has been successfully changed, now we will unload the apt deb file to a git repository of our choice so that users wanting to use my apt distribution package will be able to download and acccess it. The following describes a way to upload the consolidated folder </br>
  #give path of repo and also of the deb file if you in the folder where both
  </br>
  #the repo folder and the deb file are on same level then dont need to give it a path
  </br>
+ <b>
 $ sudo reprepro --basedir repo includedeb bionic pingasync_4.0-0ubuntu1_amd64.deb </br>
 $ sudo reprepro --basedir repo includedeb bionic pingasync*.deb </br>
 $ sudo reprepro --basedir repo list bionic </br>
@@ -234,24 +237,28 @@ $ sudo reprepro --basedir repo list bionic </br>
 $ sudo gpg --output PUBLIC.KEY --armor --export ******syed@microsoft.com </br>
 $ sudo mv PUBLIC.KEY repo </br>
 
+</b>
+
+<b>Step 9:</b> Once everything has been consolidated into a single repo folder then you will clone an empty git repo into your repo folder so you can upload the distribution final code to it, make sure to move the PUBLIC.KEY file and all other folder to your folder which has been cloned from a git repository, make sure you have ownership rights to that folder in order to be able to do a push after commit, it will ask for credentials in order for you push the code to the online github repo</br>
+<b>
 $ cd repo </br>
 $ sudo mv PUBLIC.KEY </br>
 $ sudo mv db </br>
 $ sudo mv conf </br>
 $ sudo mv pool </br>
-
-
 $ git clone ---- distination url of an online empty repo </br>
 $ git add --all </br>
 $ git commit -m "Package repository" </br>
 $ git push </br>
+</b>
  
 #enter username and password for your git repo
+<b> At this stage you have successfully uploaded your apt package and it is ready to be downloaded by anyone looking to use your apt package on their system or vm, instructions to access or install the apt package are given here along with showing your how to prepare your VM for the particular apt PingAsync package we have been dealing with so far </b></br>
 </br>
 
 
 
-<b> At this stage the Ping Utilty is installed in your system ready to be used! </b></br>
+
 <img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/26.png" >
 
 
