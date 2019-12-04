@@ -154,27 +154,32 @@ WantedBy=multi-user.target </br>
 </br>
 
 
-<b>Step 4:</b> After the files are changed then go up level in folder heirarchy as shown below and run the following commands </br>
-
+<b>Step 5:</b> After the files have been changed then go up a level in folder heirarchy as shown below and run the following commands </br>
+<b>
 $ cd ..</br>
-
 $ sudo dpkg-buildpackage -b --no-sign</br>
-
-<b>#if the above exits with error code 2 and does not go through run the following 3 commands marked with a *</b>
+</b>
+-----
+<b>Note: <b>
+#if the above exits with error code 2 and does not go through run the following 3 commands marked with a * and then retry Step 5 command <b> sudo dpkg-buildpackage -b --no-sign </b> to ensure it runs successfully
 </br>
+<b>
 *
 $ sudo apt-get install lttng-tools </br> 
 *
 $ sudo apt-get install lttng-modules-dkms </br>
 *
 $ apt-get install liblttng-ust-dev </br>
-
-------
 </b>
+------
+<b>Step 6:</b> After the above commands has run successfully, then run the following commands </br>
+
+<b>
 $ cd ..</br>
 $ sudo dpkg -i pingasync_2.0-0ubuntu1_amd64.deb </br>
 $ sudo apt-get install gnupg rng-tools </br>
 $ gpg --gen-key </br>
+</b>
 #copy the key generate by the above commands, it should be in the format as shown below (image below as shows it)
 </br>
 ------
