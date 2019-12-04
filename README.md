@@ -1,5 +1,5 @@
-# aptpackagecreationinstructions
-# Ping Apt Tool Package  Creation
+
+# Apt Tool Package Creation
 This walkthrough takes you step by step on how to create an apt package from your .NET Core 3.0 application code so that the same apt package can be easily installed on user's client machine using a simple apt-install command.
 
 # Deployment Steps
@@ -133,9 +133,10 @@ override_dh_auto_install: </br>
 
 --------------------------------------
 <b> pingasync.service </b> file changed </br>
-$ sudo vim pingasync.service </br>
 --------------------------------------
-
+You write the following in console to create a new pingasync.service file </br>
+<b>$ sudo vim pingasync.service </b>
+</br>
 
 
 [Unit] </br>
@@ -161,7 +162,7 @@ $ cd ..</br>
 
 $ sudo dpkg-buildpackage -b --no-sign</br>
 
-#if the above exits with error code 2 and does not go through run the following 3 commands marked with a *
+<b>#if the above exits with error code 2 and does not go through run the following 3 commands marked with a *</b>
 </br>
 *
 $ sudo apt-get install lttng-tools </br> 
