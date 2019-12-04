@@ -160,7 +160,7 @@ $ cd ..</br>
 $ sudo dpkg-buildpackage -b --no-sign</br>
 </b>
 -----
-<b>Note: <b>
+<b>Note: </b>
 #if the above exits with error code 2 and does not go through run the following 3 commands marked with a * and then retry Step 5 command <b> sudo dpkg-buildpackage -b --no-sign </b> to ensure it runs successfully
 </br>
 <b>
