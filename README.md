@@ -191,7 +191,7 @@ sub   rsa3072 2019-11-28 [E] [expires: 2021-11-27] </br>
 <img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/gpg%20gen%20key.png" >
 
 
-#position in directory '/Komal/Asyn-r-code/repo'
+<b># navigate to position at directory '/Komal/Asyn-r-code/' </b>
 </br>
 $ sudo apt-get install reprepro </br>
 $ mkdir repo && cd repo </br>
@@ -204,9 +204,10 @@ $ sudo vim distributions</br>
 <b>distributions </b> file changed </br>
 --------
 
-#change your file name and put the key SignWith below 
+<b>#change your file name and put the key SignWith below 
 </br>
 #this is the pub key id given earlier step 
+</b>
 </br>
 
 Origin: PingAsync Tool </br>
