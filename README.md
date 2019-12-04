@@ -29,22 +29,22 @@ $ sudo dotnet publish -c Release --self-contained -r ubuntu.18.04-x64</br>
 
 #run this 
 </br>
-$ sudo dotnet tool install -g dotnet-symbol</br>
+<b>$ sudo dotnet tool install -g dotnet-symbol</br></b>
 #it is ok if the following command doesnt run as it if for .NET SDK 2.1
 </br>
-$ sudo dotnet-symbol --symbols bin/Release/netcoreapp3.0/ubuntu.18.04-x64/publish/</br>
+<b>$ sudo dotnet-symbol --symbols bin/Release/netcoreapp3.0/ubuntu.18.04-x64/publish/</br></b>
 
 
 #run the following
-$ sudo dotnet tool install -g dotnet-symbol</br>
+<b>$ sudo dotnet tool install -g dotnet-symbol</br></b>
 
 #skip this if it doesnt run that is fine as well
 </br>
-$ sudo dotnet-symbol --symbols bin/Release/netcoreapp3.0/ubuntu.18.04-x64/publish/</br>
+<b>$ sudo dotnet-symbol --symbols bin/Release/netcoreapp3.0/ubuntu.18.04-x64/publish/</br></b>
 
 #RUN THIS!! 
 </br>
-$ sudo apt install gnupg pbuilder ubuntu-dev-tools apt-file dh-make bzr-builddeb</br>
+<b>$ sudo apt install gnupg pbuilder ubuntu-dev-tools apt-file dh-make bzr-builddeb</br>
 
 $ export DEBEMAIL="******syed@microsoft.com"</br>
 
@@ -67,8 +67,9 @@ $ sudo dh_make -f ../pingasync-2.0.tar.gz -s -c mit -n</br>
 $ cd debian </br>
 $ sudo rm *ex *EX </br>
 $ sudo rm README README.Debian README.source pingasync-docs.docs </br>
+</b>
 
-Files Changes
+The following demonstrates Files Changes that need to be made in the following files located in the <b> debian </b> folder
 
 --------------------------------------
 <b>changelog</b> file changed </br>
@@ -182,10 +183,10 @@ $ gpg --gen-key </br>
 ------
 </br>
 <b>
-pub   rsa3072 2019-11-28 [SC] [expires: 2021-11-27] </br>
-      DDDXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX315E </br>
-uid                      PingAsync Tool <******syed@microsoft.com> </br>
-sub   rsa3072 2019-11-28 [E] [expires: 2021-11-27] </br>
+pub     rsa3072 2019-11-28 [SC] [expires: 2021-11-27] </br>
+        DDDXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX315E </br>
+uid                    PingAsync Tool <******syed@microsoft.com> </br>
+sub     rsa3072 2019-11-28 [E] [expires: 2021-11-27] </br>
 </br>
 </b>
 <img src="https://komalsandboxdiag.blob.core.windows.net/pingarmtemplatereadmefiles/gpg%20gen%20key.png" >
