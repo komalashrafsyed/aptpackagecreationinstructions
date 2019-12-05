@@ -223,7 +223,7 @@ SignWith: B501DE17DA19A16F  </br>
 
 -------
 
-<b>Step 8:</b> After the distributions file has been successfully changed, now we will unload the apt deb file to a git repository of our choice so that users wanting to use my apt distribution package will be able to download and acccess it. The following describes a way to upload the consolidated folder </br>
+<b>Step 8:</b> After the distributions file has been successfully changed, now we will unload the apt deb file to a git repository of our choice so that users wanting to use our apt distribution package will be able to download and install it. The following describes a way to upload the consolidated folder with the repo folder</br>
  #give path of repo and also of the deb file if you in the folder where both
  </br>
  #the repo folder and the deb file are on same level then dont need to give it a path
