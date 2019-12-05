@@ -1,6 +1,7 @@
 
 # Apt Tool Package Creation
 This walkthrough takes you step by step on how to create an apt package from your .NET Core 3.0 application code so that the same apt package can be easily installed on user's client machine using a simple apt-install command.
+it is inspired by this <a href="https://medium.com/bluekiri/packaging-a-net-core-service-for-ubuntu-4f8e9202d1e5">article</a>
 
 # Deployment Steps
 <b>Step 1:</b> You need to <b>'Download Code'</b> for your .NET Core Application from <a href="https://github.com/komalashrafsyed/pingasync">here</a> </br>
