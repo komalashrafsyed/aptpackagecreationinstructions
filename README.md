@@ -258,7 +258,7 @@ $ git push </br>
 #enter username and password for your git repo  </br>
 </b>
 </br>
- At this stage you have successfully uploaded your apt package and it is ready to be downloaded by anyone looking to use your apt package on their system or vm, instructions to access or install the apt package are given here along with showing your how to prepare your VM for the particular apt PingAsync package we have been dealing with so far </br>
+ At this stage you have successfully uploaded your apt package and it is ready to be downloaded by anyone looking to use your apt package on their system or vm, instructions to access or install the apt package are given <a href="https://github.com/komalashrafsyed/PingAppARMTemplate/tree/master/subdir">here</a> along with showing your how to prepare your VM for the particular apt PingAsync package we have been dealing with so far </br>
 </br>
 
 
