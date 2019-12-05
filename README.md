@@ -3,7 +3,7 @@
 This walkthrough takes you step by step on how to create an apt package from your .NET Core 3.0 application code so that the same apt package can be easily installed on user's client machine using a simple apt-install command.
 
 # Deployment Steps
-<b>Step 1:</b> You need to <b>'Download Code'</b> for your .NET Core Application from <a href="https://dev.azure.com/airband/_git/Komal">here</a> </br>
+<b>Step 1:</b> You need to <b>'Download Code'</b> for your .NET Core Application from <a href="https://github.com/komalashrafsyed/pingasync">here</a> </br>
 
 use the <b>git clone codeurl</b> command to download the code to your VM </br>
 
