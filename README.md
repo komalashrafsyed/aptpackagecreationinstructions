@@ -245,14 +245,17 @@ $ sudo mv PUBLIC.KEY repo </br>
 
 <b>
 $ cd repo </br>
-$ sudo mv PUBLIC.KEY </br>
-$ sudo mv db </br>
-$ sudo mv conf </br>
-$ sudo mv pool </br>
-$ git clone ---- distination url of an online empty repo </br>
+$ git clone ---- distination url of an online empty repo let's suppose it's called destfolder for this example </br>
+
+$ sudo mv PUBLIC.KEY destfolder</br>
+$ sudo mv db destfolder </br>
+$ sudo mv conf destfolder</br>
+$ sudo mv pool destfolder</br>
+$ cd destfolder </br>
 $ git add --all </br>
 $ git commit -m "Package repository" </br>
 $ git push </br>
+
 
  
 #enter username and password for your git repo  </br>
