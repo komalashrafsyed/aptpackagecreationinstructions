@@ -160,7 +160,8 @@ WantedBy=multi-user.target </br>
 $ cd ..</br>
 $ sudo dpkg-buildpackage -b --no-sign</br>
 </b>
------</br>
+-----
+</br>
 <b>Note: </b>
 #if the above exits with error code 2 and does not go through run the following 3 commands marked with a * and then retry Step 5 command <b> sudo dpkg-buildpackage -b --no-sign </b> to ensure it runs successfully
 </br>
@@ -172,7 +173,8 @@ $ sudo apt-get install lttng-modules-dkms </br>
 *
 $ apt-get install liblttng-ust-dev </br>
 </b>
-------</br>
+------
+</br>
 <b>Step 6:</b> After the above commands has run successfully, then run the following commands </br>
 
 <b>
