@@ -156,6 +156,7 @@ WantedBy=multi-user.target </br>
 </b>
 <b>Step 5:</b> After the files have been changed then go up a level in folder heirarchy as shown below and run the following commands </br>
 <b>
+
 $ cd ..</br>
 $ sudo dpkg-buildpackage -b --no-sign</br>
 </b>
@@ -195,6 +196,7 @@ sub     rsa3072 2019-11-28 [E] [expires: 2021-11-27] </br>
 
 <b>Step 7:</b> After the above commands has run successfully, and you have a key with you in a seperate file, then run the following commands </br> navigate to position at directory '/Komal/Asyn-r-code/' 
 </br>
+
 <b>
 $ sudo apt-get install reprepro </br>
 $ mkdir repo && cd repo </br>
@@ -240,6 +242,7 @@ $ sudo mv PUBLIC.KEY repo </br>
 </b>
 
 <b>Step 9:</b> Once everything has been consolidated into a single repo folder then you will clone an empty git repo into your repo folder so you can upload the distribution final code to it, make sure to move the PUBLIC.KEY file and all other folder to your folder which has been cloned from a git repository, make sure you have ownership rights to that folder in order to be able to do a push after commit, it will ask for credentials in order for you push the code to the online github repo</br>
+
 <b>
 $ cd repo </br>
 $ sudo mv PUBLIC.KEY </br>
@@ -250,9 +253,10 @@ $ git clone ---- distination url of an online empty repo </br>
 $ git add --all </br>
 $ git commit -m "Package repository" </br>
 $ git push </br>
-</b>
+
  
 #enter username and password for your git repo  </br>
+</b>
  At this stage you have successfully uploaded your apt package and it is ready to be downloaded by anyone looking to use your apt package on their system or vm, instructions to access or install the apt package are given here along with showing your how to prepare your VM for the particular apt PingAsync package we have been dealing with so far </br>
 </br>
 
