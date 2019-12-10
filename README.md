@@ -12,7 +12,7 @@ use the <b>git clone codeurl</b> command to download the code to your VM </br>
 
 <b> az vm create --resource-group myResourceGroup --name myVM --image UbuntuLTS --admin-username azureuser --generate-ssh-keys </b>
 
-<b>Step 3:</b> After you ssh into the VM, you can type the following to install the relevant required packages</br>
+<b>Step 3:</b> After you ssh into the VM using the command "ssh azureuser@ipaddress", you can type the following to install the relevant required packages</br>
 <b>
 $ sudo wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb</br>
 $ sudo dpkg -i packages-microsoft-prod.deb</br>
