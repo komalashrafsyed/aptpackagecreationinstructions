@@ -30,18 +30,10 @@ $ sudo dotnet build </br>
 $ sudo dotnet publish -c Release --self-contained -r ubuntu.18.04-x64</br>
 </b>
 
-#run this 
+#run the following this 
 </br>
 <b>$ sudo dotnet tool install -g dotnet-symbol</br></b>
 #it is ok if the following command doesnt run as it if for .NET SDK 2.1
-</br>
-<b>$ sudo dotnet-symbol --symbols bin/Release/netcoreapp3.0/ubuntu.18.04-x64/publish/</br></b>
-
-
-#run the following
-<b>$ sudo dotnet tool install -g dotnet-symbol</br></b>
-
-#skip this if it doesnt run that is fine as well
 </br>
 <b>$ sudo dotnet-symbol --symbols bin/Release/netcoreapp3.0/ubuntu.18.04-x64/publish/</br></b>
 
